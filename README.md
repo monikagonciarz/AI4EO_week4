@@ -2,6 +2,21 @@
 GEOL0069 - Assignment 4
 Sea-ice and lead classification - unsupervised learning methods
 
+# Table of Contents
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+---
+
+## Introduction
+This project does XYZ...
+
+## Installation
+Instructions for installation...
+
 
 
 ![1](https://github.com/user-attachments/assets/9ad1fa9f-5d32-4703-b970-946ab34ba70f)
