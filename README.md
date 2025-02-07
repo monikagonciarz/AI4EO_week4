@@ -22,12 +22,17 @@ This project is the assessed practical for GEOL0069 week 4. The goal is to use u
 
 ## Installation
 
-
+First, the Google Drive must be mounted on Google Colab:
 
 ```python
 from google.colab import drive
 drive.mount('/content/drive')
 ```
+
+
+
+Then, the following software needs to be installed in order to run the code:
+
 ```python
 pip install rasterio
 ```
@@ -35,7 +40,22 @@ pip install rasterio
 pip install netCDF4
 ```
 
+Next, a set of functions must be loaded. It's crucial to preprocess the data to ensure compatibility with our analytical models. This involves transforming the raw data into meaningful variables, such as peakiness and stack standard deviation (SSD), and removing NaN values. At any point, shapes of arrays can be checked using e.g. `waves.shape`. The exact process is detailed in the notebook file.
+
+
+
 ## Gaussian Mixture Models (GMM)
+
+The Gaussian model can be initialized using the GaussianMixture function from sklearn.mixture. When initializing, you need to define the number of components (or clusters) and the random state, which helps ensure that the results are reproducible. After setting up the model, it can be fitted to the data using `gmm.fit()`, based on the way the data is preprocessed or cleaned. Finally, the model can predict the cluster labels for the data points using `gmm.predict()`, the size of which can be checked using `clusters_gmm.shape`. The sieze of them should match `waves_cleaned.shape`, `data_cleaned.shape`, and `flag_cleaned.shape`.
+
+We can also inspect how many data points are there in each class of your clustering prediction.
+```python
+unique, counts = np.unique(clusters_gmm, return_counts=True)
+class_counts = dict(zip(unique, counts))
+print("Cluster counts:", class_counts)
+
+# From the outputs: 8880 pixels classified as sea ice, 3315 pixels classified as leads
+```
 
 
 ## Results
