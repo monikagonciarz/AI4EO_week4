@@ -150,6 +150,11 @@ The confusion matrix offers a way to evaluate the clustering performance:
 
 The matrix suggests a high level of agreement between the ESA official classification and the GMM clustering. The low FN (22) and FP (24) values indicate that GMM rarely makes errors in distinguishing between sea ice and leads, with a strong accuracy overall.
 
+A classification report is presented at the end of the code notebook. It provides metrics such as precision (how many predicted positives are correct), recall (how many actual positives are identified), F1-score (the balance between precision and recall), and support (the number of actual instances for each class in the dataset), which further help evaluate the model's performance.
+          
+
+
+
 
 <br>  
 
