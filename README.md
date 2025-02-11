@@ -3,7 +3,7 @@ GEOL0069 Assignment 4
 
 Sea-ice and lead altimetry classification - unsupervised learning methods
 
-This project is the assessed practical for GEOL0069 week 4. The goal is to use unsupervised learning methods to classify sea ice and leads from Sentinel-3 altimetry datasets, and produce an average echo shape and standard deviation for these two classes. Then, the results are quantified against the ESA official classification using a confusion matrix. The Assignment4_Unsupervised_Learning_Methods.ipynb notebook available in this GitHub is a development of the notebook Chapter1_Unsupervised_Learning_Methods.ipynb provided by the GEOL0069 module team: Dr Michel Tsamados, Weibin Chen, and Connor Nelson.
+This project is the assessed practical for GEOL0069 week 4. The goal is to use unsupervised learning methods to classify sea ice and leads from Sentinel-3 altimetry datasets, and produce an average echo shape and standard deviation for these two classes. Then, the results are quantified against the ESA official classification using a confusion matrix. The Assignment4_Unsupervised_Learning_Methods.ipynb notebook available in this GitHub is an adaptation of the notebook Chapter1_Unsupervised_Learning_Methods.ipynb provided by the GEOL0069 module team: Dr Michel Tsamados, Weibin Chen, and Connor Nelson.
 
 <br>  
 
